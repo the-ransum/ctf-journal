@@ -1,0 +1,3 @@
+# CTF Journal
+
+Welcome! This is a **Work in Progress**...
