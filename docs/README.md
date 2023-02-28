@@ -1,11 +1,11 @@
 # CTF Journal
 
 
-# General Docs
+## General Docs
 
 - [Capture the Flag Beginners Bible](Capture%20the%20Flag%20Beginners%20Bible.md)
 
 
-# Writeups
+## Writeups
 
 - [Easy - Photobomb](Easy%20-%20Photobomb.md)
