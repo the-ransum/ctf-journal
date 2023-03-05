@@ -68,3 +68,50 @@
 | LinEnum | Script used to enumerate Linux systems and identify privilege escalation vectors. | `./LinEnum.sh -t` (Run a thorough scan), `./LinEnum.sh -k password` (Search for passwords) |
 | Windows-Exploit-Suggester | Script that compares a Windows system's patch level against a database of known vulnerabilities and suggests exploits. | `windows-exploit-suggester.py --update` (Update the database), `windows-exploit-suggester.py
 
+
+## Nmap
+
+```bash
+$ nmap -sV HOSTNAME
+$ nmap -p- -sV HOSTNAME
+$ nmap -p1-1000 -sV HOSTNAME
+$ nmap -p- --max-rate=5000 -sV HOSTNAME
+```
+
+
+## Webservers
+
+Directory Brute Forcing
+
+```bash
+$ gobuster dir -w /usr/share/wordlists/dirb/common.txt -x .php,.html,.txt -u HOSTNAME -o ./gobuster.txt
+```
+
+**or**
+
+```bash
+$ dirb HOSTNAME /usr/share/dirb/wordlists/common.txt -w -X .php,.html,.txt
+```
+
+Vulnerability Searching
+```bash
+$ nikto -h HOSTNAME -output ./nikto.txt
+```
+
+Fuzzing
+```bash
+$ wfuzz -c -z file,/usr/share/wfuzz/wordlist/general/common.txt --hc 400,404,403 -u 'http://HOSTNAME/help.php' -d 'page=Fuzz'
+```
+
+
+## Metasploit
+
+Metasploit initial startup
+```bash
+$ msfdb init
+```
+
+Start the metasploit console
+```bash
+$ msfconsole -q
+```
