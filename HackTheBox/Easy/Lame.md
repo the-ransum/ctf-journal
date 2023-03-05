@@ -1,10 +1,12 @@
 # Lame
 
 
+## Enumeration
+
 Run some port scans using `nmap`...
 
 ```bash
-┌──(root㉿kali)-[/home/kali/Documents/HTB/Boxes/Lame]
+┌──(root㉿kali)-[/home/…/Desktop/HTB/Boxes/Lame]
 └─# cat scans/alltcp
 # Nmap 7.93 scan initiated Thu Mar  2 21:52:10 2023 as: nmap -sT -p- --min-rate 10000 -oN scans/alltcp -Pn lame.htb
 Nmap scan report for lame.htb (10.10.10.3)
@@ -34,7 +36,7 @@ PORT     STATE  SERVICE
 
 # Nmap done at Thu Mar  2 21:52:44 2023 -- 1 IP address (1 host up) scanned in 13.57 seconds
 ```
- 
+
 ```bash
 ┌──(root㉿kali)-[/home/…/Desktop/HTB/Boxes/Lame]
 └─# cat scans/tcpscripts 
@@ -191,6 +193,9 @@ Papers: No Results
 
 ```
 
+
+## Foothold
+
 One that seems to pop out the most is the Username Map Script, so let's take a note on that.
 
 So now that we have two viable attack vectors, we can go back to where we noted our `vsftpd` exploit and setup our exploit and playload.
@@ -338,4 +343,7 @@ find / -name 'root.txt' -exec cat {} \;
 cde67e7033229c29ff8739ddf26cc641
 ```
 
-Win.
+
+## Conclusion
+
+Lastly, **Hack the Planet**!

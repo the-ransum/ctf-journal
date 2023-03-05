@@ -1,8 +1,9 @@
-# Photobomb — Easy - 2023
+# Photobomb
 
 - [HTB - Photobomb](https://app.hackthebox.com/machines/500)
 
-## Process
+
+## Enumeration
 
 ```bash
 ┌──(root㉿kali)-[~]
@@ -61,6 +62,9 @@ Seems to have nothing of interest, but at the bottom there's a section for downl
 Using Burp Suite we can intercept when seeing what this button does.
 
 ![image](https://user-images.githubusercontent.com/29680216/221745177-15fb505c-8d94-4cad-95a8-2070664d309d.png)
+
+
+## Exploitation
 
 Using the below payload injection seems we were able to establish a shell.
 - `[LHOST]` your local host.
@@ -163,4 +167,8 @@ root@photobomb:/home/wizard/photobomb#
 ```
 
 
-**Gratz! Hack the Planet.**
+## Conclusion
+
+This was a fun box. I enjoyed the manual enumeration and the exploitation. I'm not sure if this was intended, but I was able to get a root shell without having to modify the `find` script. I was able to overwrite the `find` script and then run the `sudo` command with the `PATH` set to the current directory. This allowed me to run my modified `find` script and get a root shell.
+
+Lastly, **Hack the Planet**!

