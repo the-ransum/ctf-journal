@@ -1,4 +1,4 @@
-# Capture the Flag Beginners Bible
+# Notes
 
 
 ## Workflow Process
