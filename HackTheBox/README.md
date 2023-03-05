@@ -1,5 +1,8 @@
-# Writeups
+# CTF Journal
 
+## HackTheBox
 
-- [Easy - Photobomb](Easy%20-%20Photobomb.md)
+- [Lame](/HackTheBox/Lame.md)
+- [MetaTwo](/HackTheBox/MetaTwo.md)
+- [Photobomb](/HackTheBox/Photobomb.md)
 
