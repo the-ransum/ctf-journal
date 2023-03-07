@@ -115,3 +115,17 @@ Start the metasploit console
 ```bash
 $ msfconsole -q
 ```
+
+---
+
+```
+sublist3r -d domain.tld -t 3 -e google
+```
+
+```
+gobuster dns -d domain.tld -w /usr/share/wordlists/amass/subdomains.lst -o gobuster.subdomains.txt
+```
+
+```
+wfuzz -c -f sub-fighter.txt -Z -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt --sc 200,202,204,301,302,307,403 domain.tld
+```
