@@ -2,7 +2,7 @@
 
 ## HackTheBox
 
-- [Lame](/HackTheBox/Lame.md)
-- [MetaTwo](/HackTheBox/MetaTwo.md)
-- [Photobomb](/HackTheBox/Photobomb.md)
+- [Lame](/HackTheBox/Easy/Lame.md)
+- [MetaTwo](/HackTheBox/Easy/MetaTwo.md)
+- [Photobomb](/HackTheBox/Easy/Photobomb.md)
 
